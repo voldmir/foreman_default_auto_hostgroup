@@ -1,0 +1,1 @@
+# Matches foreman_default_auto_hostgroup.gemspec

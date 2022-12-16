@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Apply hostgroup matching even if a host already has one."
+msgstr "Применить сопоставление группы, даже если оно уже есть на узле."
+
+msgid "Apply hostgroup matching only on new hosts"
+msgstr "Применять сопоставление групп только к новым хостам"
+
+msgid "Apply hostgroup's environment to host even if a host already has a different one"
+msgstr "Применить окружение группы к хосту, даже если хост уже имеет другое окружение"
+
+msgid "Fact name to match"
+msgstr "Название факта для соответствия"
+
+msgid "Parameter name hostgroup"
+msgstr "Имя параметра hostgroup"
+
+msgid "Default host group"
+msgstr "Группа по умолчанию"
+
+msgid "hosts to exclude"
+msgstr "Хосты для исключения"
+
+msgid "Default Auto Hostgroup"
+msgstr "Назначение групп хостам"
