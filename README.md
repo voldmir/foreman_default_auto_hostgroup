@@ -10,5 +10,5 @@ See Foreman's [plugin installation documentation](https://theforeman.org/plugins
 
 | Foreman Version | Plugin Version |
 | --------------- | -------------: |
-| ~> 1.24         |          0.1.0 |
+| ~> 1.24         |          1.0.0 |
 
