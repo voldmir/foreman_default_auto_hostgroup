@@ -8,7 +8,7 @@ module ForemanDefaultAutoHostgroup
 
         return result unless Setting[:enable_auto_hostgroup]
         return result unless Setting[:fact_name_match]
-        return result unless facts_hash[Setting[:fact_name_match]].present?
+        #return result unless facts_hash[Setting[:fact_name_match]].present?
         return result if Setting[:hosts_to_exclude].map { |r| Regexp.new(r).match?(hostname) }.include?(true)
 
         new_hostgroup = find_hostgroup()
@@ -31,8 +31,10 @@ module ForemanDefaultAutoHostgroup
     end
 
     def find_hostgroup()
-      hg = Hostgroup.unscoped.find_by(title: facts_hash[Setting[:fact_name_match]])
-      return hg if hg.present?
+      if facts_hash[Setting[:fact_name_match]].present?
+        hg = Hostgroup.unscoped.find_by(title: facts_hash[Setting[:fact_name_match]])
+        return hg if hg.present?
+      end
 
       hg = Hostgroup.unscoped.find_by(name: Setting[:default_name_hostgroup])
       return hg if hg.present?
